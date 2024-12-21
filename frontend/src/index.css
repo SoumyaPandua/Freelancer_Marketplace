@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulseColor {
+  0% {
+    color: rgb(100, 100, 255); /* Light Blue */
+    transform: scale(1);
+  }
+  20% {
+    color: rgb(255, 100, 100); /* Light Red */
+    transform: scale(1.1);
+  }
+  40% {
+    color: rgb(100, 255, 100); /* Light Green */
+    transform: scale(1);
+  }
+  60% {
+    color: rgb(255, 255, 100); /* Light Yellow */
+    transform: scale(1.1);
+  }
+  80% {
+    color: rgb(100, 255, 255); /* Light Cyan */
+    transform: scale(1);
+  }
+  100% {
+    color: rgb(255, 100, 255); /* Light Magenta */
+    transform: scale(1.1);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 5s linear infinite;
+}
